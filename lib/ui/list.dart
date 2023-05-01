@@ -33,13 +33,14 @@ Widget buildHintsList(List<Recipe> recipes) {
                 padding: EdgeInsets.all(7.0),
                 child: Image.network(
                   imageURL,
-                  height: 80,
-                  width: 80,
+                  fit: BoxFit.cover,
+                  height: 50,
+                  width: 50,
 
                 ),
               ),
               Flexible(child: Text(
-                title,
+                title,style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),softWrap: true,
               ),)
             ],
           ),)
@@ -49,28 +50,3 @@ Widget buildHintsList(List<Recipe> recipes) {
   );
 }
 
-
-Widget recipeCard(String image, String title, BuildContext context) {
-  return Card(
-    color: Colors.yellow[50],
-    elevation: 8.0,
-    margin: EdgeInsets.all(4.0),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-    child: Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Image.network(
-            image,
-            height: 50,
-            width: 50,
-            
-          ),
-        ),
-        Text(
-          title,
-        ),
-      ],
-    ),
-  );
-}
