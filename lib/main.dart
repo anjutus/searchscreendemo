@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:searchscreen/bloc/pizza_event.dart';
 import 'package:searchscreen/bloc/search/search_bloc.dart';
-import 'package:searchscreen/bloc/search/search_event.dart';
 import 'package:searchscreen/data/repositories/search_repository.dart';
-import 'package:searchscreen/ui/ArticleListScreen.dart';
 import 'package:searchscreen/bloc/pizza_bloc.dart';
 import 'package:searchscreen/data/repositories/pizza_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,8 +29,8 @@ class MyApp extends StatelessWidget {
                   create: (context) => SearchBloc(SearchRepositoryImpl()
                   ))
               ],
-              child: MaterialApp(
-                title: 'Foodie App',
+              child: const MaterialApp(
+                title: 'Recipe Search App',
                 home: SearchView(),
               )),
         );

@@ -10,10 +10,11 @@ class SearchBloc extends Bloc<SearchEvent,SearchState> {
     on<Search>(
             (event, emit) async {
           try {
-            emit(SearchUninitialized());
-            List<Recipe> recipes = await repository.searchPizza(event.query);
-            emit(SearchLoaded(recipes: recipes));
-          } catch (e) {
+            emit(SearchLoadingState());
+            final List<Recipe> recipes = await repository.searchPizza(event.query);
+
+              emit(SearchLoaded(recipes: recipes));
+          } catch (e,stackTrace) {
             emit(SearchErrorState(message: e.toString()));
           }
         });

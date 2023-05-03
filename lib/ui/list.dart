@@ -7,6 +7,7 @@ import 'package:searchscreen/ui/pizza_detail.dart';
 Widget buildHintsList(List<Recipe> recipes) {
   String imageURL;
   String title ;
+  if(recipes.isNotEmpty){
   return SafeArea(child:ListView.builder(
         itemCount: recipes.length,
         shrinkWrap: true,
@@ -40,13 +41,18 @@ Widget buildHintsList(List<Recipe> recipes) {
                 ),
               ),
               Flexible(child: Text(
-                title,style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),softWrap: true,
+                title,style: const TextStyle(fontSize: 14,fontWeight: FontWeight.bold),softWrap: true,
               ),)
             ],
           ),)
 
           );
-        }),
+        })
+
   );
+  } else{
+    return const Center(
+      child: Text('No Results'),
+    );}
 }
 

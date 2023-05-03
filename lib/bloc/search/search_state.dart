@@ -8,6 +8,12 @@ class SearchUninitialized extends SearchState{
   @override
   List<Object?> get props =>[];
 }
+class SearchLoadingState extends SearchState{
+
+  @override
+  List<Object?> get props => [];
+
+}
 class SearchLoaded extends SearchState{
   final List<Recipe> recipes;
   SearchLoaded({required this.recipes});
@@ -15,6 +21,7 @@ class SearchLoaded extends SearchState{
   List<Object?> get props => [];
 
 }
+
 class SearchErrorState extends SearchState{
   final String message;
   SearchErrorState({required this.message});

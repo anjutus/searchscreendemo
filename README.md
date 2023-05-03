@@ -13,9 +13,9 @@ A Flutter project for Searching food using Search Field.I have used Forkify API 
 
 ## Screenshots
 
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2FSearchScreen_1.png?alt=media)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2F1.png?alt=media)
 
-![](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2FSearchscreen2.png?alt=media)
+![](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2F2.png?alt=media)
 
-![](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2FSearchScreen_3.png?alt=media)
+![](https://firebasestorage.googleapis.com/v0/b/incident-portal-5b7c7.appspot.com/o/SearchScreen%2F3.png?alt=media)
 
